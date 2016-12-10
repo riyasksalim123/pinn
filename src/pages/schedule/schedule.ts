@@ -25,7 +25,7 @@ export class SchedulePage {
   @ViewChild('scheduleList', { read: List }) scheduleList: List;
 
   public params: any;
-
+public poi:any;
   public queryText:any="";
   constructor(
   
@@ -35,7 +35,9 @@ export class SchedulePage {
     public navParams: NavParams
 
   ) {
-    this.params = this.navParams.data;
+    let data = this.navParams.data;
+    this.params=data.array;
+this.poi=data.poi;
 
   }
 

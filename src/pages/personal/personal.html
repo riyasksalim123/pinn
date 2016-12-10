@@ -16,7 +16,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>personal</ion-title>
+    <ion-title>Mined User Interests From Social Media</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -25,11 +25,20 @@
 <ion-content padding>
   <ion-item class="item-profile" style="background-color: tomato;">
     <div class="item-avatar">
-      <img ng-src="http://paulyfamily.org/themes/cloudy/images/silhouette_unknown.gif">
+      <img style="width:34%" src="http://www.american.edu/uploads/profiles/large/chris_palmer_profile_11.jpg">
     </div>
     <h1>{{mydata.name}}</h1>
     <p>{{mydata.gender}}</p>
     <p>{{mydata.hometown.name}}</p>
+  </ion-item>
+  <br>
+  <br>
+  <ion-item>
+    <button ion-button icon-left>
+  <ion-icon ios="ios-sync" md="md-sync"></ion-icon>
+ Sync {{mydata.name}} Interests with Current Location
+</button>
+
   </ion-item>
 
   <h1>Interesting Places</h1>
@@ -44,7 +53,7 @@
       <!--<p>{{group.vicinity}}</p>-->
       <!--<ion-icon ios="ios-home" md="md-home"></ion-icon>-->
       <!--<ion-icon *ngIf="item.gender=='male'" name="man" item-left></ion-icon>-->
-      <ion-icon name="logo-twitter" item-right></ion-icon>
+      <!--<ion-icon name="logo-twitter" item-right></ion-icon>-->
       <button ion-button item-right color="danger">View Details</button>
 
     </ion-item>

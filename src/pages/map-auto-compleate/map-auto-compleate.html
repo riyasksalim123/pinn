@@ -43,7 +43,7 @@
             </sebm-google-map>
 
             <ion-item *ngIf="poibutton" color="dark">
-                <button ion-button full color="danger" (click)="showpoi()">show interesting places near {{currentPlace}}</button>
+                <button ion-button full color="danger" (click)="showpoi(currentPlace)">show interesting places near {{currentPlace}}</button>
             </ion-item>
              <ion-item *ngIf="poibutton" color="dark">
                 <button ion-button full color="danger" (click)="showuserInterests()">show user interests</button>

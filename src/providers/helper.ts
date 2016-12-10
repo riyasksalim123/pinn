@@ -6,7 +6,10 @@ export class HelperServices {
   constructor(private toastCtrl: ToastController,public modalCtrl: ModalController,private navCtrl:NavController) {}
 
 public showToast=(message?: string)=> {
-        const toast = this.toastCtrl.create({ message: message, showCloseButton: true,closeButtonText: 'Ok'});
+        const toast = this.toastCtrl.create({ message: message, showCloseButton: true,
+          closeButtonText: 'Ok'
+      ,position:'top'  
+      });
         toast.present();
     };
 public speak = (text: string) => TextToSpeech.speak(text).then(() => console.log('Success')).catch((reason: any) => console.log(reason)); 

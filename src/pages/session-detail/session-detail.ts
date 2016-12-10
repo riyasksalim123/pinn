@@ -13,16 +13,13 @@ export class SessionDetailPage {
 
   constructor(public navParams: NavParams, public backend: Backendservice) {
       this.session = navParams.data;
-      alert(this.session);
       this.flickr("coimbatore");
   }
 
-public flickr(name){
-              let url = "http://api.flickr.com/services/feeds/photos_public.gne?tags="+ name+"&format=json&jsoncallback=?";
-            this.backend.load(url).then(data => {
-                this.results=data;
-                console.log(this.results.items);
-            });
-}
-    
+  public flickr(name) {
+    let url = "http://api.flickr.com/services/feeds/photos_public.gne?tags=" + name + "&format=json&jsoncallback=?";
+    this.backend.load(url).then(data => {
+      this.results = data;
+    });
+  }
 }

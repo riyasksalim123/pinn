@@ -48,7 +48,8 @@ export class ConferenceApp {
     { title: 'Login', component: LoginPage, icon: 'log-in' },
     { title: 'Signup', component: SignupPage, icon: 'person-add' }
   ];
-  rootPage: any = TutorialPage;
+  // rootPage: any = TutorialPage;
+    rootPage: any = TutorialPage
 
   constructor(
     public events: Events,

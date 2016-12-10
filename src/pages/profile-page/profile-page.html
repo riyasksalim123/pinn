@@ -87,16 +87,17 @@
   </ion-card>-->
 <ion-card style="background-color: gray;
     box-shadow: 10px 10px 10px;">
-    <img  src="http://www.aspirehire.co.uk/aspirehire-co-uk/_img/profile.svg"/>
+    <img  src="http://www.american.edu/uploads/profiles/large/chris_palmer_profile_11.jpg"/>
   <ion-card-content>
     <ion-card-title>
     {{mydata.name}}
       </ion-card-title>
     <p>
-     {{mydata.gender}} {{relationship_status}}
+     {{mydata.gender}} {{mydata.relationship_status}}
     </p>
     <p>{{mydata.hometown.name}}</p>
   </ion-card-content>
+   <button ion-button full color="danger" (click)="continue()">continue</button>
 </ion-card>
-  <button ion-button full color="danger" (click)="continue()">continue</button>
+ 
 </ion-content>
